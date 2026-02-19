@@ -3,7 +3,7 @@
 $DB_HOST = 'localhost';
 $DB_NAME = 'o99345il_cars';
 $DB_USER = 'o99345il_cars';
-$DB_PASS = 'Qwerty123';
+$DB_PASS = '';
 
 $dsn = "mysql:host={$DB_HOST};dbname={$DB_NAME};charset=utf8mb4";
 $options = [
