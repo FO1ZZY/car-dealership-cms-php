@@ -1,0 +1,15 @@
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+    AddCharset UTF-8 .php .html .htm .css .js .json
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^car/([a-zA-Z0-9-]+)/?$ /car.php?slug=$1 [L,QSA]
+</IfModule>

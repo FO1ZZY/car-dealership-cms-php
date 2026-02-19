@@ -1,0 +1,15 @@
+# runtime / sensitive
+/public_html/uploads/*
+!/public_html/uploads/.gitkeep
+/public_html/uploads/cars/*
+!/public_html/uploads/cars/.gitkeep
+/public_html/sessions/*
+!/public_html/sessions/.gitkeep
+/public_html/_php_errors.log
+
+# local artifacts
+*.zip
+*.log
+*.bak
+.DS_Store
+Thumbs.db
